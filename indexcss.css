@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Noto+Sans+Mono:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Global declarations */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Noto Sans Mono", sans-serif;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  padding-top: 5em;
+}
+
+/* Other declarations */
+
+body {
+  font-size: 16px;
+}
+
+/* the header section */
+
+header {
+  background-color: white;
+  padding: 0.5em 2em 0 2em;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 0 1em 0 1em;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c5262b;
+}
+
+nav li:hover {
+  transform: scale(1.25);
+}
+
+nav li:hover > a {
+  color: #973437;
+}
+
+/* the features section*/
+
+#features {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#features li {
+  display: flex;
+  width: 50vw;
+  margin: 3em 0 3em 0;
+}
+
+#features li div {
+  margin-left: 2em;
+  transform: translateY(-0.5em);
+}
+
+#features h2 {
+  margin-bottom: 0.25em;
+}
+
+.fa-solid {
+  color: #c5262b;
+  font-size: 3.25em;
+}
+
+.fa-truck-fast {
+  font-size: 3em;
+  transform: translateX(-0.2em);
+  margin-right: -0.45em;
+}
+
+.fa-money-bill-1-wave {
+  font-size: 2.75em;
+  transform: translateX(-0.15em);
+  margin-right: -0.3em;
+}
+
+#menuBtn {
+  cursor: pointer;
+  z-index: 99999;
+  position: absolute;
+  right: 0;
+  height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.menuBrgr {
+  display: inline-block;
+  width: 3em;
+  height: 0.5em;
+  background-color: #c5262b;
+  transition: 0.5s ease-in-out;
+}
+
+/* the watch it section */
+
+#watch-it {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#watch-it h1 {
+  color: #c5262b;
+  margin-bottom: 3em;
+}
+
+.vid-container {
+  border: 5px solid #c5262b;
+}
+
+#watch-it iframe {
+  display: block;
+  z-index: 4;
+}
+
+/* the get now section */
+
+#get-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#get-now h1 {
+  color: #c5262b;
+  margin-bottom: 3em;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  border: 3px solid #c5262b;
+  background-color: white;
+  border-radius: 1px;
+  padding: 1em;
+  transition: 0.5s ease-in-out;
+  margin: 1.25em;
+  z-index: 3;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  border: 3px solid #973437;
+}
+
+.card * {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card button {
+  background-color: #c5262b;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.25em;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card button:hover {
+  transform: scale(1.15);
+}
+
+/* the footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  margin-bottom: 2.5em;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer form * {
+  margin: 0.5em;
+}
+
+footer form label {
+  font-size: 1.75em;
+  color: #c5262b;
+}
+
+form input:not([type="submit"]) {
+  width: 15em;
+  padding: 0.25em;
+  font-size: 1.25em;
+  text-align: center;
+  border: 2px solid #c5262b;
+  transition: 0.5s ease-in-out;
+}
+
+form input:not([type="submit"]):hover {
+  width: 20em;
+}
+
+form input:not([type="submit"]):focus {
+  width: 20em;
+}
+
+form input[type="submit"] {
+  padding: 0.25em;
+  background-color: #c5262b;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  transform: scale(1.25);
+}
+
+/* the social media accs section */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.fa-brands {
+  color: #c5262b;
+  font-size: 2em;
+  margin: 0.25em;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-twitter {
+  font-size: 2.25em;
+}
+
+.fa-instagram {
+  font-size: 2.25em;
+}
+
+.fa-brands:hover {
+  color: #973437;
+  transform: scale(1.5);
+}
+
+/* The media queries */
+
+@media (max-width: 1120px) {
+  iframe {
+    width: 800px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  section {
+    padding-top: 7em;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 940px) {
+  .card-container {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 910px) {
+  iframe {
+    width: 700px;
+    height: 393.75px;
+  }
+}
+
+@media (max-width: 850px) {
+  #features li {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 810px) {
+  iframe {
+    width: 550px;
+    height: 309.375px;
+  }
+}
+
+@media (max-width: 670px) {
+  body {
+    font-size: 12px;
+  }
+
+  iframe {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 510px) {
+  body {
+    font-size: 11px;
+  }
+
+  section {
+    padding-top: 8em;
+  }
+}
+
+@media (max-width: 480px) {
+  iframe {
+    width: 350px;
+    height: 196.875px;
+  }
+
+  nav li {
+    margin: 0 1em 0 1em;
+  }
+
+  #header-img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  nav li {
+    margin: 0 0.75em 0 0.75em;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 10px;
+  }
+
+  .card-image {
+    width: 180px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 168.75px;
+  }
+}
+
+@media (max-width: 395px) {
+  nav li {
+    margin: 0 0.5em 0 0.5em;
+  }
+
+  #header-img {
+    width: 70px;
+    height: 52.5px;
+  }
+}
+
+@media (max-width: 370px) {
+  body {
+    font-size: 9px;
+  }
+
+  iframe {
+    width: 250px;
+    height: 140.625px;
+  }
+
+  .card-image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 335px) {
+  nav li {
+    margin: 0 0.35em 0 0.35em;
+  }
+}
+
+@media (max-width: 325px) {
+  iframe {
+    width: 200px;
+    height: 112.5px;
+  }
+
+  #header-img {
+    width: 50px;
+    height: 38px;
+  }
+
+  nav li {
+    margin: 0.35em;
+  }
+
+  nav {
+    font-size: 8px;
+  }
+}
