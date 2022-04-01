@@ -6,5 +6,5 @@
 -I didn't really care that much about class names since I was working alone :)  
 -I didn't really give the media queries my best since I didn't have enough time to do better things  
 
---this is the codepen link for the project--
+--this is the codepen link for the project--  
 https://codepen.io/itzSaeed/pen/LYeOVoy
