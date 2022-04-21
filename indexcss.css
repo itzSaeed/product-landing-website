@@ -150,6 +150,7 @@ nav li:hover > a {
 #watch-it iframe {
   display: block;
   z-index: 4;
+  border: none;
 }
 
 /* the get now section */
@@ -278,6 +279,11 @@ aside {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+aside a span {
+  position: absolute;
+  left: -99999%;
 }
 
 .fa-brands {
