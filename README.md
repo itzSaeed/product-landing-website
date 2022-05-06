@@ -1,4 +1,4 @@
-# freeCodeCamp_responsive_web_design_product_landing
+# product landing website
 
 --notes--  
 -I don't have the right to any of the photos or icons used in the project and it was used jsut for demonstration purposes  
